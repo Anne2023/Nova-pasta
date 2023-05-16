@@ -124,7 +124,8 @@ header {
         display: block;
     }
 }
-body{
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,7 +133,8 @@ body{
     background-color: #313131;
 }
 
-.card{
+/** Card **/
+.card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -140,93 +142,93 @@ body{
     padding: 25px;
     background-color: #3f3f3f;
     text-align: justify;
-    box-shadow: 10px 10xp 10px rgba(0,0,0,0.389);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.389);
+    position: relative;
 }
+
 .card::before{
     content: '';
     position: absolute;
     top: 0;
     right: 0;
     border: 20px solid transparent;
-    border-top: 20px solid orange;
-    border-right: 20px solid orange;
+    border-top: 20px solid #06d62e;
+    border-right: 20px solid #06d62e;
 }
 
-.icon{
+/** Icon **/
+.icon {
+    margin-bottom: 20px;
+}
+
+.icon img {
     width: 250px;
 }
 
-.cpntent{
+/** Content **/
+.content {
     height: 215px;
     overflow: hidden;
     position: relative;
 }
 
-.content::before{
+.content::before {
     content: '';
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 100px;
-    background-color: linear-gradient(transparente, #3f3f3f);
+    background: linear-gradient(transparent, #3f3f3f);
 }
 
-.content h3{
+.content h3 {
     text-align: center;
     margin-bottom: 15px;
     font-size: 20px;
+    position: relative;
 }
 
-.content::before{
+.content h3::before {
     content: '';
     position: absolute;
     height: 2px;
     width: 40px;
-    background-color: orange;
+    background-color: #06d62e;
     bottom: 4px;
     border-radius: 100px;
 }
 
-.content p{
+.content p {
     color: #b7b7b7;
 }
 
-#read_button{
+/** Read More/Less Button **/
+#read_button {
     border: none;
     padding: 10px;
     border-radius: 2px;
     margin-top: 15px;
-    background-color: orangered;
+    background-color: #06d62e;
     color: #313131;
     font-weight: bold;
     cursor: pointer;
     font-size: 16px;
     transition: all 0.2s ease-in-out;
 }
-.read_button:hover{
+
+#read_button:hover {
     background-color: transparent;
-    color: orange;
+    color: #06d62e;
     transition: all 0.2s ease-in-out;
 }
 
-.card.active.content{
+/** Active **/
+.card.active .content {
     height: auto;
-
 }
-.card.active.content::before{
+
+.card.active .content::before {
     visibility: hidden;
-    
-}
-
-
-
-
-
-
-
-.icon img{
-    width: 250px;
-
 }
 
 footer {
