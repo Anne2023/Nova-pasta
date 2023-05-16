@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Inicial</title>
-    <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> --link para acessar o css--
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         p{
             text-align: justify;
@@ -14,18 +16,49 @@
     </style>
 
 </head>
-<div class="header" id="header">
-    <div class="navigation_header">
-    </button>
-    <a href="#tela1" class="active">Menu</a>
-    <a href="#tela2" class="active">Linguagem de Programação</a>
-    <a href="#tela3" class="active">Automação Industrial</a>
-    <a href="#tela4" class="active">Redes de Computadores</a>
-    <a href="#tela5" class="active">Banco de Dados</a>
-    <a href="#tela6" class="active">Ciência de Dados</a>
-</div>
-</div>
+
 <body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link"> Início </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Linguagem de Programação </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Automação Industrial </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Redes de Computadores </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Banco de Dados </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Ciência de Dados </a></li>
+                </ul>
+
+            </div>
+            <div class="login-button">
+                <button><a href="#"> Entrar </a></button>
+
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="imagens/menu_white_36dp.svg"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link"> Início </a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> Linguagem de Programação </a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> Automação Industrial </a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> Redes de Computadores </a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> Banco de Dados </a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> Ciência de Dados </a></li>
+            </ul>
+            <div class="login-button">
+                <button><a href="#"> Entrar </a></button>
+
+            </div>
+        </div>
+    </header>
+    <script src="assets\js\js"></script> --importar o javascript--
     <div>
         <h1> Análise e Desenvolvimento de Sistemas </h1>
         <h2> <p>Curso Tecnologo em Análise e Desenvolvimento, oferecido pelo Senais, com parceria com a Empresa 2RPNet, 
@@ -58,9 +91,9 @@
     </div>
     <footer>
         <div id="footer_content">
-            <div id="footer_contects">
+            <div id="footer_contacts">
                 <h1>Logo</h1>
-                <p>Its all about your dream</p>
+                <p>Its all about your dreams</p>
 
                 <div id="footer_social_midia"></div>
                 <a href="#" class="footer.link" id="github">
@@ -70,7 +103,6 @@
                     <i class="fa-brands fa-linkedin"></i>       
 
             </div>
-
         </div>
 
         <ul class="footer-list">
@@ -98,27 +130,28 @@
             </li>
 
             <li>
-                <a href="#" class="footer-link" >Desctop </a>
+                <a href="#" class="footer-link" >Descktop </a>
             </li>
             <li>
                 <a href="#" class="footer-link" >Claud </a>
             </li>
 
         </ul>
-        <div id="footer-subscribe">
+        <div id="footer_subscribe">
             <h3>Subscribe</h3>
+
             <p>Texto</p>
-            <div id="imput_group">
+            <div id="input_group">
                 <input type="email" id="email">
-                <button> <i class="fa-solid fa-envelope"></i></button>
-
-
+                <button> 
+                    <i class="fa-solid fa-envelope"></i>
+                </button>
             </div>
 
         </div>
-        <div id="footer_copywrhite"></div>
+        <div id="footer_copyright"></div>
         &#169
-        2023 reserv
+        2023 Direitos Reservados
 
     </footer>
   
