@@ -1,20 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Inicial</title>
-
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        p{
-            text-align: justify;
-            text-indent: 50px;
-        }
-    </style>
-
+    <title>Projeto Final</title>
 </head>
 
 <body>
@@ -25,136 +17,108 @@
             </div>
             <div class="nav-list">
                 <ul>
-                    <li class="nav-item"><a href="#" class="nav-link"> Início </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Sobre</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link"> Início </a></li>
                     <li class="nav-item"><a href="#" class="nav-link"> Linguagem de Programação </a></li>
                     <li class="nav-item"><a href="#" class="nav-link"> Automação Industrial </a></li>
                     <li class="nav-item"><a href="#" class="nav-link"> Redes de Computadores </a></li>
                     <li class="nav-item"><a href="#" class="nav-link"> Banco de Dados </a></li>
                     <li class="nav-item"><a href="#" class="nav-link"> Ciência de Dados </a></li>
-                </ul>
-
-            </div>
-            <div class="login-button">
-                <button><a href="#"> Entrar </a></button>
-
-            </div>
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="imagens/menu_white_36dp.svg"></button>
-            </div>
-        </nav>
-
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item"><a href="#" class="nav-link"> Início </a></li>
-                <li class="nav-item"><a href="#" class="nav-link"> Linguagem de Programação </a></li>
-                <li class="nav-item"><a href="#" class="nav-link"> Automação Industrial </a></li>
-                <li class="nav-item"><a href="#" class="nav-link"> Redes de Computadores </a></li>
-                <li class="nav-item"><a href="#" class="nav-link"> Banco de Dados </a></li>
-                <li class="nav-item"><a href="#" class="nav-link"> Ciência de Dados </a></li>
             </ul>
-            <div class="login-button">
-                <button><a href="#"> Entrar </a></button>
 
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
             </div>
         </div>
     </header>
-    <script src="assets\js\js"></script> --importar o javascript--
-    <div>
-        <h1> Análise e Desenvolvimento de Sistemas </h1>
-        <h2> <p>Curso Tecnologo em Análise e Desenvolvimento, oferecido pelo Senais, com parceria com a Empresa 2RPNet, 
-            proporciona aos alunos O Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas formação de um profissional Full Stack, com competências técnicas para realizar a integração entre 
-            Tecnologia da Informação (TI) e Tecnologia da Automação (TA) na implementação dos conceitos e ferramentas da Indústria 4.0.</p>
 
-            <p> Com dois anos de duração, trata-se de uma formação rápida e de alta empregabilidade mediante ao constante 
-            aquecimento do mercado de TI e TA nas empresas.</p>
-            
-            <p>O curso é o único no país que atua diretamente na formação de um profissional Full Stack, ou seja, 
-            capaz de atuar em todas as etapas de um projeto, do Front ao Back-End; do desenvolvimento à implementação e 
-            gestão das tecnologias habilitadoras da Indústria 4.0. Tudo isso com acesso às mais diversas e modernas tecnologias 
-            devido a parcerias com empresas referência em inovação, como Cisco, Nokia e Amazon Web Services.</p>
-        </h2>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <div id="footer_content">
+        <div id="footer_contacts">
+            <h1>Logo</h1>
+            <p>Nunca esqueça de sonhar</p>
 
-        <h2>
-            1ºSemestre
-
-          <p> Neste primeiror Semestre foram desenvolvidos os seguintes conteúdos:</p>
-
-          <p> Linguagem de Programação</p>
-          <p> Automação Industrial</p>
-          <p> Redes de Computadores</p>
-          <p> Banco de Dados</p>
-          <p> Ciência de Dados</p>
-        </h2>
-
- 
-
-    </div>
-    <footer>
-        <div id="footer_content">
-            <div id="footer_contacts">
-                <h1>Logo</h1>
-                <p>Its all about your dreams</p>
-
-                <div id="footer_social_midia"></div>
-                <a href="#" class="footer.link" id="github">
+            <div id="footer_social_media">
+                <a href="#" class="footer-link" id="github">
                     <i class="fa-brands fa-github"></i>
+                </a>
 
-                <a href="#" class="footer.link" id="fa-linkedin">
-                    <i class="fa-brands fa-linkedin"></i>       
+                <a href="#" class="footer-link" id="linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
 
+                <a href="#" class="footer-link" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
             </div>
         </div>
-
+        
         <ul class="footer-list">
             <li>
                 <h3>Blog</h3>
             </li>
             <li>
-                <a href="#" class="footer-link" >Tech </a>
-            </li>
-
-            <li>
-                <a href="#" class="footer-link" >Adventure </a>
+                <a href="#" class="footer-link">Tech</a>
             </li>
             <li>
-                <a href="#" class="footer-link" >Music </a>
+                <a href="#" class="footer-link">Adventures</a>
             </li>
-
+            <li>
+                <a href="#" class="footer-link">Music</a>
+            </li>
         </ul>
+
         <ul class="footer-list">
             <li>
-                <h3>Product</h3>
+                <h3>Products</h3>
             </li>
             <li>
-                <a href="#" class="footer-link" >App </a>
-            </li>
-
-            <li>
-                <a href="#" class="footer-link" >Descktop </a>
+                <a href="#" class="footer-link">App</a>
             </li>
             <li>
-                <a href="#" class="footer-link" >Claud </a>
+                <a href="#" class="footer-link">Desktop</a>
             </li>
-
+            <li>
+                <a href="#" class="footer-link">Cloud</a>
+            </li>
         </ul>
+
         <div id="footer_subscribe">
             <h3>Subscribe</h3>
 
-            <p>Texto</p>
+            <p>
+                Deixe aqui a sua sejestão
+            </p>
+
             <div id="input_group">
                 <input type="email" id="email">
-                <button> 
+                <button>
                     <i class="fa-solid fa-envelope"></i>
                 </button>
             </div>
-
         </div>
-        <div id="footer_copyright"></div>
-        &#169
-        2023 Direitos Reservados
+    </div>
 
-    </footer>
-  
-     
-</body>
+    <div id="footer_copyright">
+        &#169
+        2023 Todos os Direitos Reservados
+    </div>
+</footer>
+
 </html>
