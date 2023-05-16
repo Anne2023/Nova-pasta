@@ -20,9 +20,9 @@ body {
 
     :root{
         --color-white: #fff;
-        --color-dark1: #ece8a8;
-        --color-dark2: #b3bf0e;
-        --color-dark3: #eab045;
+        --color-dark1: black;
+        --color-dark2: black;
+        --color-dark3: black;
         --color-dark4: #058a91;
         --color-dark5: #7feef6;
         --color-puple: #447276;
@@ -74,5 +74,28 @@ body {
 
 footer{
     width: 100%;
-    color: ;
+    color: var(--color-dark4);
+}
+
+#footer_content{
+    background-color: var(--color-dark2);
+    display: grid;
+    grid-template-columns: repeat(4,);
+    padding: 3rem, 3,5rem;
+}
+
+#footer_content{
+    margin-bottom: 0.75rem;
+
+}
+
+#footer_social_midia{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+#footer_social_midia footer.link{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
 }
