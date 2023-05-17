@@ -19,6 +19,102 @@
 main {
     height: 80vh;
 }
+body {
+  margin-top: 10px;
+  padding: 10px;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #313131;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  padding: 25px;
+  background-color: #3f3f3f;
+  text-align: justify;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.389);
+  position: relative;
+}
+
+.card::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 20px solid transparent;
+  border-top: 20px solid #00BFA6;
+  border-right: 20px solid #00BFA6;
+}
+
+.icon {
+  margin-bottom: 20px;
+}
+
+.icon img {
+  width: 250px;
+}
+
+.content::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}
+
+.content h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+  position: relative;
+}
+
+.content h3::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 40px;
+  background-color: #00BFA6;
+  bottom: 4px;
+  border-radius: 100px;
+}
+
+.content p {
+  color: #b7b7b7;
+}
+
+
+#read_button {
+  border: none;
+  padding: 10px;
+  border-radius: 2px;
+  margin-top: 15px;
+  background-color: #00BFA6;
+  color: #313131;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+#read_button:hover {
+  background-color: transparent;
+  color: #00BFA6;
+  transition: all 0.2s ease-in-out;
+}
+
+.card.active .content {
+  height: auto;
+}
+
+.card.active .content::before {
+  visibility: hidden;
+}
+
+
 
 footer {
     width: 100%;
@@ -90,7 +186,7 @@ footer {
 }
 
 .footer-list .footer-link:hover {
-    color: orange;
+    color: #00BFA6;
 }
 
 #footer_subscribe {
@@ -117,7 +213,7 @@ footer {
 }
 
 #input_group button {
-    background-color: orange;
+    background-color: #00BFA6;
     border: none;
     color: var(--color-neutral-40);
     padding: 0px 1.25rem;
@@ -177,7 +273,7 @@ footer {
   
   .loadingspinner div {
     display: inline-block;
-    background: darkorange;
+    background: #00BFA6;
       /*background: var(--text-color);*/
       /*box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);*/
     border: none;
