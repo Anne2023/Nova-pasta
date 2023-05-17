@@ -74,7 +74,18 @@ button:active {
  height: 50%;
  width: 50%;
  float: right;
+ align-items: center;
+}
 
+
+.img p{
+  display: inline-block;
+}
+.conteiner{
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
 }
 
 .card {
