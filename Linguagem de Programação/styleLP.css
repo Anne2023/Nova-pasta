@@ -70,22 +70,46 @@ button:active {
  
 }
 
-.img1{
- height: 50%;
- width: 50%;
- float: right;
- align-items: center;
-}
+.img2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100px;
+  width: 100px;
+ }
+ .img3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100px;
+  width: 100px;
+ }
+ .img4{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+ }
 
+ .imgs{
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 10px;
+ }
+
+ .img_currilulo{
+  margin: 20px;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+
+ }
 
 .img p{
   display: inline-block;
-}
-.conteiner{
-  width: 50%;
-  height: 50%;
-  display: flex;
-  align-items: center;
+  
 }
 
 .card {
@@ -111,11 +135,12 @@ button:active {
 }
 
 .icon {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .icon img {
   width: 250px;
+  
 }
 
 .content::before {
