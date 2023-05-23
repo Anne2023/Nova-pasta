@@ -22,7 +22,7 @@ main {
 
 header {
   background-color: #24252a;
-  box-shadow: 0px 3px 10px #464646;
+  box-shadow: 0px 3px 3px #464646;
 }
 
 .nav-bar {
@@ -53,7 +53,7 @@ header {
 }
 
 .nav-item {
-  margin: 0 15px;
+  margin: 0 10px;
 }
 
 .nav-link {
@@ -139,7 +139,6 @@ button:active {
   transform: scale(0.95);
 }
 
- 
 .content::before {
   content: '';
   position: absolute;
@@ -167,6 +166,16 @@ button:active {
 
 .content p {
   color: #b7b7b7;
+}
+.img_curriculo{
+  margin: auto;
+  padding: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 200px;
+  width: 200px;
+
 }
 
 .img2{
@@ -206,15 +215,14 @@ button:active {
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
   width: 300px;
   padding: 25px;
   background-color: #3f3f3f;
   text-align: justify;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.389);
-  position: relative;
+  position:relative;
 }
 
 .card::before{
