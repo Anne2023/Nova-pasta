@@ -157,6 +157,13 @@ button:active { /* Estilos para o contêiner principal */
     width: 700px;
     height: 400px;
 }
+.notion{
+    display: flex;
+   align-items: center;
+   flex-direction: column;
+   gap: 30px;
+
+}
 
 .content::before { /*conteúdo texto*/
   content: '';
@@ -216,6 +223,10 @@ button:active { /* Estilos para o contêiner principal */
   width: 250px; 
 }
 
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
 footer {
     width: 100%;
     color: var(--color-neutral-40);
