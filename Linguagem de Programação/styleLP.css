@@ -1,153 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
-
-:root {
-    --color-neutral-0: #0e0c0c;
-    --color-neutral-10: #171717;
-    --color-neutral-30: #a8a29e;
-    --color-neutral-40: #f5f5f5;
-
-}
-
-* {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    letter-spacing: 1px;
-    overflow: none;
-}
-.button {
-  position: relative;
-  overflow: hidden;
-  height: 3rem;
-  padding: 0 2rem;
-  border-radius: 1.5rem;
-  background: #3d3a4e;
-  background-size: 400%;
-  color: #fff;
-  border: none;
-}
-
-.button:hover::before {
-  transform: scaleX(1);
-}
-
-.button-content {
-  position: relative;
-  z-index: 1;
-}
-
-.button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: scaleX(0);
-  transform-origin: 0 50%;
-  width: 100%;
-  height: inherit;
-  border-radius: inherit;
-  background: linear-gradient(
-    82.3deg,
-    rgba(150, 93, 233, 1) 10.8%,
-    rgba(99, 88, 238, 1) 94.3%
-  );
-  transition: all 0.475s;
+body {
+  margin: 0;
+  padding: 0;
 }
 
 header {
-  background-color: #24252a;
-  box-shadow: 0px 3px 3px #464646;
-  margin-top: -3%;
-  
-}
-
-body {
-  margin-top: 10px;
   padding: 10px;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #313131;
-}
-.texto_html{
-  flex-direction: column;
-  background-color: #24252a;
-  box-shadow: 0px 3px 3px #464646;
-  gap: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.video_receita{
-  display: flex;
-  flex-direction: row;
-  justify-content:center;
-  height: 10px;
-  width: 10px;
+.btn-voltar {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #333333;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
-.texto_css{
-  flex-direction: column;
-  background-color: #24252a;
-  box-shadow: 0px 3px 3px #464646;
-  gap: 10px;
-}
-.video_curriculo{
-  display: flex;
-  flex-direction: row;
-  justify-content:center;
-  height: 10px;
-  width: 10px;
-}
-.texto_javascript{
-  flex-direction: column;
-  background-color: #24252a;
-  box-shadow: 0px 3px 3px #464646;
-  gap: 10px;
-}
-.imagem_js{
-  display: flex;
-  justify-content: space-around;
-  height: 10px;
-  width: 10px;
-  margin: 1px;
-  padding: 10px;
-}
-.video_js{
-  display: flex;
-  flex-direction: row;
-  justify-content:center;
-  height: 10px;
-  width: 10px;
 
+.content {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.img2{ 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  height: 150px;
-  width: 150px;
- }
- .img3{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  height: 150px;
-  width: 150px;
- }
- .img4{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100px;
-  width: 100px;
- }
 
- .imgs{
-  display: flex;
-  justify-content: space-around;
-  height: auto;
-  width: auto;
-  margin: 10px;
-  padding: 10px;
- }
+.texto-box {
+  width: 45%;
+  padding: 20px;
+  border: 2px solid #333333;
+}
+
+.video-container {
+  width: 45%;
+  height: 400px;
+  /* Estilize a área do vídeo conforme suas necessidades */
+}
+
+.video-gravado {
+  width: 100%;
+  height: 400px;
+  /* Estilize o vídeo gravado conforme suas necessidades */
+}
+
+.imagens-direita {
+  width: 45%;
+  height: 200px;
+  /* Estilize as imagens do lado direito conforme suas necessidades */
+}
+
+
+
+
+
+
 
 footer {
     width: 100%;
