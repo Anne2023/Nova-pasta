@@ -7,153 +7,147 @@
     <title>Redes de Computadores</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styleRC.css">
-    <script src="scriptLG.js"></script>
+    <link rel="stylesheet" href="./styleRC.css">
+    <script src="./scriptRC.js"></script>
 </head>
 
-<header>
-    <a href="/Pagina Inicial/index.html"><button class="button">Voltar</button></a>
-
-</header>
-
 <body> 
-    <section class="tela1">
-        <div class="conteudo">
-    <div class="container">
-
-        <div class="midia">
-
-        <div class="video">
-            <video class="video" controls>
-                <source src="video/20230529_154917.mp4" type="video/mp4">
-            </video>
-        </div>
-
-        <div class="Imagem">
-            <img class="imagem" src="imagem/Redes 1.jpg" alt="Imagem 1">
-            <img class="imagem" src="imagem/afeganistao e azerbaijoa.jpg" alt="Imagem 2">
-            <img class="imagem" src="imagem/osi-tcp-ip.png" alt="Imagem 3">
-        </div>
-
-    </div> 
-    </div>
-
-    <div class="card">
-        <div class="icon">
-            <img src="imagem/icon 1.svg" alt="projeto">
-        </div>
-
-    <div class="content">
-        <h3> Redes de Computadores </h3>
-        <p>Nesta matéria abordamos assuntos como os tipos de redes:</p>
-        <ul>
-            <li>PAN  - Personal Area Network</li>
-            <li>CAN -  Controller Area Network</li>
-            <li>LAN - Local Area Network</li>
-            <li>MAN - Metropolitan Are Network</li>
-            <li>WAN - Wide Are Network</li>
-           </li>
-           <p> Aprendemos também sobre as topologias lógicas e físicas, assim como os modelos da camada OSI e os seus conceitos.
-            Aprendemos sobre a tabela ASCII e finaliozamos com o endereçamento IPV6.
-           </p>
-        </ul>
-           
-        <p>Ao Lado segue os modelos desenvolvidos pelo app Packt Trace</p>
-    </div>
-    <button class="button">Conteúdo Notion</button></a>
-        <a href="https://www.notion.so/A-Tecnologia-Informa-o-e-Conectividade-Redes-de-Computadores-0f53d2261f094ea9b5eac3db0b9e9d3c">
-    
-</div>
-</section>
-
-    <footer>
-        <div id="footer_content">
-            <div id="footer_contacts">
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
                 <div class="loadingspinner">
                     <div id="square1"></div>
                     <div id="square2"></div>
                     <div id="square3"></div>
                     <div id="square4"></div>
                     <div id="square5"></div>
-                  </div>
-
-                <p>Nunca esqueça de sonhar</p>
-                
-                <div id="footer_social_media">
-                    <a href="#" class="footer-link" id="github">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-
-                    <a href="#" class="footer-link" id="linkedin">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-
-                    <a href="#" class="footer-link" id="whatsapp">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
                 </div>
             </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="/Pagina Inicial/index.html" class="nav-link" > Voltar </a></li>                  
             
-            <ul class="footer-list">
-                <li>
-                    <h3>Projeto I</h3>
-                </li>
-                <li>
-                    <li>
-                        <a href="#" class="footer-link">Curriculo</a>
-                    </li>
-                    <a href="#" class="footer-link">Lista de Exercícios</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Redes</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Controle de Estoque</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Automação Industrial</a>
-                </li>
-            </ul>
-
-            <ul class="footer-list">
-                <li>
-                    <h3>Projeto II</h3>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Calculadora</a>
-                </li>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Banco de Dados Agência de Turismo</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Scrempaper</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Normatização Titanic</a>
-                </li>
-            </ul>
-
-            <div id="footer_subscribe">
-                <h3>Ideias</h3>
-
-                <p>
-                    Deixe aqui a sua sujestão
-                </p>
-
-                <div id="input_group">
-                    <input type="ideias" id="ideias">
-                    <button>
-                        <input placeholder="Sujestões" class="input" name="text" type="text">
-                    </button>
-                </div>
+                </ul>
             </div>
-        </div>
 
-        <div id="footer_copyright">
-            &#169
-            2023 Todos os Direitos Reservados
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                    <li class="nav-item"><a href="#" class="nav-link"> Início </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Linguagem de Programação </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Automação Industrial </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Redes de Computadores </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Banco de Dados </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Ciência de Dados </a></li>
+            </ul>
+
         </div>
-    </footer>
+    </header>
+    <div class="card">
+        <div class="icon">
+            <img src="./imagem/icon2.svg" alt="projeto">
+        </div>
+    <div class="content">
+        <h3> Redes de Computadores </h3>
+         <p>Nas aulas de Automação Industrial aprendemos sobre os conceitos de controladores lógicos, como o microcontrolador arduíno, realizando alguns projetos como: ligar o pino de led; contador e acender as luzes de led em sequencia,
+            também aprendemos sobre ultrassonicos, onde podemos realizar através do arduíno um sensor de ré de um carro.
+            </p>
+        
+        </div>
+    <button id="read_button">Saiba Mais</button>
+
+    </div>
 </body>
 </html>
+<footer>
+    <div id="footer_content">
+        <div id="footer_contacts">
+            <div class="loadingspinner">
+                <div id="square1"></div>
+                <div id="square2"></div>
+                <div id="square3"></div>
+                <div id="square4"></div>
+                <div id="square5"></div>
+              </div>
+
+            <p>Nunca esqueça de sonhar</p>
+            
+            <div id="footer_social_media">
+                <a href="#" class="footer-link" id="github">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+        
+        <ul class="footer-list">
+            <li>
+                <h3>Projeto I</h3>
+            </li>
+            <li>
+                <li>
+                    <a href="#" class="footer-link">Curriculo</a>
+                </li>
+                <a href="#" class="footer-link">Lista de Exercícios</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Redes</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Controle de Estoque</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Automação Industrial</a>
+            </li>
+        </ul>
+
+        <ul class="footer-list">
+            <li>
+                <h3>Projeto II</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Calculadora</a>
+            </li>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Banco de Dados Agência de Turismo</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Scrempaper</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Normatização Titanic</a>
+            </li>
+        </ul>
+
+        <div id="footer_subscribe">
+            <h3>Ideias</h3>
+
+            <p>
+                Deixe aqui a sua sujestão
+            </p>
+
+            <div id="input_group">
+                <input type="ideias" id="ideias">
+                <button>
+                    <input placeholder="Sujestões" class="input" name="text" type="text">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer_copyright">
+        &#169
+        2023 Todos os Direitos Reservados
+    </div>
+</footer>
