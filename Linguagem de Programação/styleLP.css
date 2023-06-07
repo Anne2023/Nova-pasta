@@ -179,7 +179,6 @@ body {
     color: #b7b7b7;
 }
 
-
 #read_button {
     border: none;
     padding: 10px;
@@ -207,6 +206,9 @@ body {
     visibility: hidden;
 }
 
+.saiba_mais{
+  display: none;
+}
 
 footer {
   width: 100%;

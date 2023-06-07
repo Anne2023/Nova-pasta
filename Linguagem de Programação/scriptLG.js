@@ -20,3 +20,10 @@ button.addEventListener('click', function(){
     button.textContent = 'Saiba Mais';
 }
 );
+
+document.getElementById("meuLink").addEventListener("click", function(event) {
+    event.preventDefault();
+    console.log("Link clicado, mas o comportamento padrão foi prevenido.");
+});
+
+preventDefault
