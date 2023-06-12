@@ -117,7 +117,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 300px;
+    width: 700px; /*tamanho do card*/
     padding: 25px;
     background-color: #3f3f3f;
     text-align: justify;
