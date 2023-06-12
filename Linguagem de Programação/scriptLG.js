@@ -26,4 +26,12 @@ document.getElementById("meuLink").addEventListener("click", function(event) {
     console.log("Link clicado, mas o comportamento padrão foi prevenido.");
 });
 
-preventDefault
+var slideshow = document.querySelector('.slideshow'); 
+var images = slideshow.getElementsByTagName('img');
+var index = 0;
+
+setInterval(function() {
+  images[index].style.display = 'none';
+  index = (index + 1) % images.length;
+  images[index].style.display = 'inline-block';
+}, 3000);
