@@ -114,99 +114,98 @@ body {
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 300px;
-    padding: 25px;
-    background-color: #3f3f3f;
-    text-align: justify;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.389);
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 700px; /*tamanho do card*/
+  padding: 25px;
+  background-color: #3f3f3f;
+  text-align: justify;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.389);
+  position: relative;
 }
 
 .card::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: 20px solid transparent;
-    border-top: 20px solid #00B0FF;
-    border-right: 20px solid #00B0FF;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 20px solid transparent;
+  border-top: 20px solid #00B0FF;
+  border-right: 20px solid #00B0ff;
 }
 
 .icon {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .icon img {
-    width: 250px;
+  width: 250px;
 }
 
 .content {
-    height: 215px;
-    overflow: hidden;
-    position: relative;
+  height: 215px;
+  overflow: hidden;
+  position: relative;
 }
 
 .content::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(transparent, #3f3f3f);
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(transparent, #3f3f3f);
 }
 
 .content h3 {
-    text-align: center;
-    margin-bottom: 15px;
-    font-size: 20px;
-    position: relative;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+  position: relative;
 }
 
 .content h3::before {
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 40px;
-    background-color:#00B0FF;
-    bottom: 4px;
-    border-radius: 100px;
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 40px;
+  background-color:#00B0ff;
+  bottom: 4px;
+  border-radius: 100px;
 }
 
 .content p {
-    color: #b7b7b7;
+  color: #b7b7b7;
 }
 
 
 #read_button {
-    border: none;
-    padding: 10px;
-    border-radius: 2px;
-    margin-top: 15px;
-    background-color: #00B0FF;
-    color: #313131;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 16px;
-    transition: all 0.2s ease-in-out;
+  border: none;
+  padding: 10px;
+  border-radius: 2px;
+  margin-top: 15px;
+  background-color: #00B0ff;
+  color: #313131;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
 }
 
 #read_button:hover {
-    background-color: transparent;
-    color: #00B0FF;
-    transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  color: #00B0ff;
+  transition: all 0.2s ease-in-out;
 }
 
 .card.active .content {
-    height: auto;
+  height: auto;
 }
 
 .card.active .content::before {
-    visibility: hidden;
+  visibility: hidden;
 }
-
 
 footer {
   width: 100%;
