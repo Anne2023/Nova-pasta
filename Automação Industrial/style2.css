@@ -12,7 +12,44 @@
     padding: 0;
     box-sizing: border-box;
     letter-spacing: 1px; 
+    text-align: justify;
 }
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #F5F400 #DFE9EB;
+  }
+  
+  /* Chrome, Edge and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+    width: 10px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #DFE9EB;
+    border: 2px dotted #FFFFFF;
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+    background-color: #B8C0C2;
+  }
+  
+  *::-webkit-scrollbar-track:active {
+    background-color: #B8C0C2;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #F5F400;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #F5F400;
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #F5F400;
+  }
 
 main {
     height: 80vh;
@@ -60,7 +97,7 @@ body {
     height: 20%;
     gap: 10%;
     text-shadow: px px px black;
-    box-shadow: 3px 3px 2px 0px rgba(230, 239, 75, 1);
+    box-shadow: 3px 3px 2px 0px #F5F400;
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -154,3 +191,36 @@ header {
         display: block;
     }
 }
+
+table.customTable {
+    width: 50%;
+    background-color: #464646;
+    border-collapse: separate;
+    border-width: 1px;
+    border-color: #F5F400;
+    border-style: solid;
+    color: #000000;
+    align-items: center;
+  }
+  
+  table.customTable td, table.customTable th {
+    border-width: 1px;
+    border-color: #F5F400;
+    border-style: solid;
+    padding: 5px;
+  }
+  
+  table.customTable thead {
+    background-color: #F5F400
+  }
+
+  .slideshow-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .slideshow img {
+    width: 100%;
+    display: inline-block;
+  }
