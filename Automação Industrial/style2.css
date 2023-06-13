@@ -93,7 +93,7 @@ body {
 }
 .section__text{
     background-color: #464646;
-    color: #000000;
+    color: white;
     border: 3px solid #6D6D6D;
     padding: 10px;
     margin: 10px;
@@ -198,13 +198,14 @@ header {
 
 table.customTable {
     width: 50%;
-    background-color: #464646;
+    background-color: white;
     border-collapse: separate;
     border-width: 1px;
     border-color: #F5F400;
     border-style: solid;
-    color: #000000;
+    color: #464646;
     align-items: center;
+    justify-content:center;
   }
   
   table.customTable td, table.customTable th {

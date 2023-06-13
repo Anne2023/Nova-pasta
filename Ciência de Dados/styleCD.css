@@ -155,7 +155,6 @@ body {
     bottom: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(transparent, #3f3f3f);
 }
 
 .content h3 {
@@ -176,7 +175,7 @@ body {
 }
 
 .content p {
-    color: #b7b7b7;
+  color: white;
 }
 
 
