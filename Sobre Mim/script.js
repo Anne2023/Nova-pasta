@@ -1,25 +1,35 @@
-/*===============================animação de digitação===============*/
-var typed = new Typed (".typing",{
-    String : ["Estudante","Estagiária"],
-    typeSpeed:100,
-    BackSpeed:60,
-    loop: true
-})
+function getProjects(){
+    const urlGitHub = 'https://api.github.com/users/Gutoneitzke/repos'
+    var loadingElement = document.getElementById('loading')
 
-/*===============================typing animation===============*/
-const nav = document.querySelector(".nav"),
-        navList = nav.querySelectorAll("li"),
-        totalNavList = navList.length;
-            for(let i=0; i<totalNavList; 1++)
-            {
-                const a = navList[i].querySelector("a");
-                a.addEventListener("click", function()
-            {
-                    for(let j=0; j<totalNavList; j++)
-                    {
-                        navList[j].querySelector("a").classList.remove("active");
-                    }
-                    this.classList.add("active")
-            }
-        )
-            }
+    fetch(urlGitHub,{
+        method: 'GET',
+    })
+        .then((response) => response.json())
+        .then((response) => {
+            console.log(response)
+            showProjects(response)
+            loadingElement.style.display = 'none'
+        })
+        .catch((e) => {
+            console.log(`Error -> ${e}`)
+        })
+}
+
+function showProjects(data){
+    var listElement = document.getElementById('my-projects-list')
+    for(let i = 0; i < data.length; i++)
+    {
+        let div = document.createElement("div")
+        let a = document.createElement("a")
+        a.href = data[i]['clone_url']
+        a.target = '_blank'
+        a.title = data[i]['description']
+        let linkText = document.createTextNode(data[i]['name']);
+        a.appendChild(linkText);
+        div.appendChild(a)
+        listElement.appendChild(div)
+    }
+}
+
+getProjects()
